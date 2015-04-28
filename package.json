@@ -1,0 +1,32 @@
+{
+  "name": "anyfs-sftp-adapter",
+  "version": "0.1.0",
+  "description": "SFTP adapter for AnyFS",
+  "main": "index.js",
+  "dependencies": {
+    "ssh2": "^0.4.6"
+  },
+  "devDependencies": {
+    "anyfs": "^0.1.6",
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anyfs/sftp-adapter.git"
+  },
+  "keywords": [
+    "sftp",
+    "ftp",
+    "anyfs",
+    "gulpplugin"
+  ],
+  "author": "Liu Dong <ddliuhb@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anyfs/sftp-adapter/issues"
+  },
+  "homepage": "https://github.com/anyfs/sftp-adapter"
+}
