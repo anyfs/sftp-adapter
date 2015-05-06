@@ -9,14 +9,11 @@ var Server = ssh2.Server;
 // server
 new Server({
     privateKey: "hello",
-})
-var server = new Server();
-
-server.init({
-    user: "test",
-    pass: "test",
-    port: 3334,
-});
+}, function(client) {
+    client.on('authentication', function(ctx) {
+        ctx.accept();
+    });
+}).listen(0, '127.0.0.1');
 
 var adapter = new Adapter({
     host: "localhost",
